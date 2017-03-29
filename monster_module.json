@@ -1,0 +1,50 @@
+{
+    "tables" : [
+        {
+            "name" : "Users",
+            "cols" : [
+                {
+                    "name" : "FirstName",
+                    "type" : "string"
+                },
+                {
+                    "name" : "LastName",
+                    "type" : "string"
+                }
+            ],
+            "records" : [
+                {
+                    "FirstName" : "Tim",
+                    "LastName" : "Chen"
+                },
+                {
+                    "FirstName" : "Dylan",
+                    "LastName" : "Sharkey"
+                }
+            ]
+        },
+        {
+            "name": "Cars",
+            "cols" : [
+                {
+                    "name" : "Make",
+                    "type" : "string"
+                },
+                {
+                    "name" : "Model",
+                    "type" : "string"
+                }
+            ],
+            "records" : [
+                {
+                    "Make" : "Toyota",
+                    "Model" : "Corolla"
+                },
+                {
+                    "Make" : "Ford",
+                    "Model" : "Mustang"
+                }
+            ]
+        }
+    ]
+}
