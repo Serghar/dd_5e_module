@@ -1,48 +1,91 @@
 {
     "tables" : [
         {
-            "name" : "Users",
+            "name" : "Monsters",
             "cols" : [
                 {
-                    "name" : "FirstName",
-                    "type" : "string"
+                    "name" : "Name",
+                    "type" : "TEXT"
                 },
                 {
-                    "name" : "LastName",
-                    "type" : "string"
+                    "name" : "AC",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "STR",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "DEX",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "CON",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "INT",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "WIS",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "CHA",
+                    "type" : "INTEGER"
+                },
+                {
+                    "name" : "CR",
+                    "type" : "REAL"
+                },
+                {
+                    "name" : "Actions",
+                    "type" : "JSON"
                 }
             ],
             "records" : [
                 {
-                    "FirstName" : "Tim",
-                    "LastName" : "Chen"
+                    "Name" : "Goblin",
+                    "AC" : 15,
+                    "STR" : 8,
+                    "DEX" : 14,
+                    "CON" : 10,
+                    "INT" : 10,
+                    "WIS" : 8,
+                    "CHA" : 8,
+                    "CR" : 0.25,
+                    "Actions" : [
+                        {
+                            "Name" : "Scimitar",
+                            "Description" : "Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 5 (1d6 + 2) slashing damage"
+                        },
+                        {
+                            "Name" : "Shortbow",
+                            "Description" : "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage"
+                        }
+                    ]
                 },
                 {
-                    "FirstName" : "Dylan",
-                    "LastName" : "Sharkey"
-                }
-            ]
-        },
-        {
-            "name": "Cars",
-            "cols" : [
-                {
-                    "name" : "Make",
-                    "type" : "string"
-                },
-                {
-                    "name" : "Model",
-                    "type" : "string"
-                }
-            ],
-            "records" : [
-                {
-                    "Make" : "Toyota",
-                    "Model" : "Corolla"
-                },
-                {
-                    "Make" : "Ford",
-                    "Model" : "Mustang"
+                    "Name" : "Kobold",
+                    "AC" : 12,
+                    "STR" : 7,
+                    "DEX" : 15,
+                    "CON" : 9,
+                    "INT" : 8,
+                    "WIS" : 7,
+                    "CHA" : 8,
+                    "CR" : 0.125,
+                    "Actions" : [
+                        {
+                            "Name" : "Dagger",
+                            "Description" : "Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 54(1d4 + 2) piercing damage"
+                        },
+                        {
+                            "Name" : "Sling",
+                            "Description" : "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage"
+                        }
+                    ]
                 }
             ]
         }
